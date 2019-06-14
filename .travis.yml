@@ -12,4 +12,5 @@ before_install:
 
 script:
   - make test
+  - make validate
   - make fmt
