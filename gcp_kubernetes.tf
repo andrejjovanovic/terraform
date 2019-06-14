@@ -1,6 +1,6 @@
 resource "google_container_cluster" "kubey" {
-  namec = "kubeycluster"
-  location = "us-west1-a"
+  namec              = "kubeycluster"
+  location           = "us-west1-a"
   initial_node_count = "1"
 
   node_locations = [
