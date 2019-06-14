@@ -27,6 +27,15 @@ variable "network_name" {
   description = "Just the network name for the Google Cloud Platform"
 }
 
+variable "new_value" {
+
+}
+
+variable "newmap" {
+  type = "map"
+}
+
+
 variable "gcp_ip_cidr_range" {
   default     = "10.0.0.0/16"
   type        = "string"
@@ -47,3 +56,8 @@ variable "subnet_names" {
     subnet3 = "subnetthree"
   }
 }
+
+output "first_output" {
+  value = "${aws_subnet.subnet1.cidr_block}"
+}
+
